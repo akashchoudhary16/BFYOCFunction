@@ -22,9 +22,8 @@ namespace BFYOCFunction
             product = product ?? data?.productId;
 
             return product != null
-                ? (ActionResult)new OkObjectResult($"The product name for your product id {product} is Starfruit Explosion")
+                ? (ActionResult)new OkObjectResult($"The product name for your product id {product} is Starfruit Explosion Awesome")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
-            //commen
         }
     }
 }
